@@ -2,9 +2,8 @@ from pykinect_body_detector import BodyDetector
 from video_recorder import VideoRecorder
 import cv2
 Is_done = False
-body_image = BodyDetector()
 id_video = '0001' # en la base de datos esta relacionado con el nombre del paciente, terapia, etc..
-
+body_image = BodyDetector()
 recorder = VideoRecorder(id_video)
 while not Is_done:
     image = body_image.run()
