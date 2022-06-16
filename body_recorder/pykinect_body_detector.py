@@ -150,9 +150,9 @@ class BodyDetector(object):
 
 
 if __name__ == '__main__':
-    game = BodyDetector()
+    body = BodyDetector()
     while True:        
-        image = game.run()
+        image = body.run()
         cv2.imshow('Body detection', image)
         cv2.waitKey(10)
 
