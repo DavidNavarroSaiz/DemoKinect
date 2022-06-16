@@ -12,7 +12,9 @@ class LoadVideo():
                 cv2.imshow('Frame',frame)
                 cv2.waitKey(10)
             else:
+                print("Video failed")
                 break
+                
         self.video_scr.release()
         cv2.destroyAllWindows()
 

@@ -1,5 +1,5 @@
 Como hacerlo funcionar:
-
+crear un ambiente con python 3.6 
 descargar el repositorio:
 https://github.com/Kinect/PyKinect2
 pip install pykinect
