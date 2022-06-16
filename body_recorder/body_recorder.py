@@ -11,7 +11,7 @@ while not Is_done:
     recorder.append_frame(image)
     cv2.imshow('color', image)
     key = cv2.waitKey(10)
-    if key==27: # Press esc to break the loop
+    if key==27 or key == 25: # Press esc to break the loop
         recorder.finish_record()
         body_image.finish_detection()
         Is_done = True
