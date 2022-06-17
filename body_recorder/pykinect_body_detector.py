@@ -155,4 +155,7 @@ if __name__ == '__main__':
         image = body.run()
         cv2.imshow('Body detection', image)
         cv2.waitKey(10)
+        key = cv2.waitKey(10)
+        if key==27 or key == 25:
+            break
 

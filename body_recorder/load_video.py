@@ -21,7 +21,7 @@ class LoadVideo():
 
 
 if __name__ == '__main__':
-    video = LoadVideo('0001')
+    video = LoadVideo('0003')
 
 
        
