@@ -48,8 +48,8 @@ class BodyDetector(object):
         img = cv2.cvtColor(image_np, cv2.COLOR_BGR2RGB)
         return img
     def draw_body_bone(self, joints, jointPoints, color, joint0, joint1):
-        joint0State = joints[joint0].TrackingState;
-        joint1State = joints[joint1].TrackingState;
+        joint0State = joints[joint0].TrackingState
+        joint1State = joints[joint1].TrackingState
 
         # both joints are not tracked
         if (joint0State == PyKinectV2.TrackingState_NotTracked) or (joint1State == PyKinectV2.TrackingState_NotTracked): 
@@ -60,7 +60,8 @@ class BodyDetector(object):
             return
 
         # ok, at least one is good 
-        start = (jointPoints[joint0].x, jointPoints[joint0].y)
+        start = (jointPoints[joint0].x, join
+        Points[joint0].y)
         end = (jointPoints[joint1].x, jointPoints[joint1].y)
 
         try:
