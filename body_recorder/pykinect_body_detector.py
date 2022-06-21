@@ -60,8 +60,7 @@ class BodyDetector(object):
             return
 
         # ok, at least one is good 
-        start = (jointPoints[joint0].x, join
-        Points[joint0].y)
+        start = (jointPoints[joint0].x, jointPoints[joint0].y)
         end = (jointPoints[joint1].x, jointPoints[joint1].y)
 
         try:
